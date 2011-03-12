@@ -1,5 +1,5 @@
 package framework.controller
 
 class DefaultController extends Controller {
-  override def bar = "This is DefaultController"
+  override def bar = "default bar"
 }
