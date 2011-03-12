@@ -1,5 +1,5 @@
 package framework.controller
 
 trait Controller {
-  def bar
+  def bar: String
 }
