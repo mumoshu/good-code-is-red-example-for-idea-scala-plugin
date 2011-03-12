@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="framework-extension:jar">
+  <artifact type="jar" build-on-make="true" name="framework-extension:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/framework_extension_jar</output-path>
     <root id="archive" name="framework_extension.jar">
       <element id="module-output" name="framework-extension" />
