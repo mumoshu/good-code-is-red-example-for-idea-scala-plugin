@@ -1,3 +1,0 @@
-package framework
-
-class Model
