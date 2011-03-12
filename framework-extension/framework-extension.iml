@@ -16,16 +16,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="scala-library-2.8.1" level="application" />
-    <orderEntry type="library" name="framework" level="project" />
-    <orderEntry type="module-library">
-      <library name="framework-extension">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/out/artifacts/framework_extension_jar/framework_extension.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="module" module-name="framework" />
   </component>
 </module>
 
