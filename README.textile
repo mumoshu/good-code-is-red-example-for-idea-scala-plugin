@@ -8,6 +8,7 @@ You can redefine @DefaultController@ in *framework*, using package objects.
 Though, when @DefaultController@ is redefined like that,
 the following code is red.
 
+<pre>
 <code>
 package application
 
@@ -17,9 +18,9 @@ import framework.controller._
 //import framework.controller.DefaultController
 
 // 'DefaultController' is red.
-object Foos extends %{color:red}DefaultController% {
+object Foos extends DefaultController {
   // 'bar' is red.
-  def test = %{color:red}bar%
+  def test = bar
 }
 
 object TestApp {
@@ -28,3 +29,4 @@ object TestApp {
   }
 }
 </code>
+</pre>
