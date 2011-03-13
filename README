@@ -1,1 +1,29 @@
-This file was created by IntelliJ IDEA 10.0.1 for binding GitHub repository
+h1. Redefined types are not resolved correctly
+
+Asssume that there are two jars(or modules) __framework__ and __framework_extension__,
+and you first defined type 'DefaultController' in __framework__.
+
+You can redefine 'DefaultController' in __framework__, using package objects.
+
+Though, when 'DefaultController' is redefined like that,
+the following code is red.
+
+bc(scala).
+package application
+
+import framework.controller._
+
+//This also does not resolve DefaultController.
+//import framework.controller.DefaultController
+
+// 'DefaultController' is red.
+object Foos extends DefaultController {
+  // 'bar' is red.
+  def test = bar
+}
+
+object TestApp {
+  def main(args: Array[String]) {
+    println(Foos.test)
+  }
+}
