@@ -1,14 +1,15 @@
 h1. Redefined types are not resolved correctly
 
-Asssume that there are two jars(or modules) __framework__ and __framework_extension__,
-and you first defined type 'DefaultController' in __framework__.
+Asssume that there are two jars(or modules) *framework* and *framework_extension*,
+and you first defined type @DefaultController@ in *framework*.
 
-You can redefine 'DefaultController' in __framework__, using package objects.
+You can redefine @DefaultController@ in *framework*, using package objects.
 
-Though, when 'DefaultController' is redefined like that,
+Though, when @DefaultController@ is redefined like that,
 the following code is red.
 
-bc(scala).
+<pre>
+<code>
 package application
 
 import framework.controller._
@@ -27,3 +28,5 @@ object TestApp {
     println(Foos.test)
   }
 }
+</code>
+</pre>
